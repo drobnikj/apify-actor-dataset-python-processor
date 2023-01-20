@@ -1,0 +1,11 @@
+{
+	"actorSpecification": 1,
+	"name": "dataset-procesor-python",
+	"title": "Getting Started Actor",
+	"description": "Adds two integers.",
+	"version": "0.0",
+	"input": "./input-schema.json",
+	"readme": "./README.md",
+	"dockefile": "./Dockerfile",
+	"storages": {}
+}

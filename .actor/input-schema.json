@@ -1,0 +1,21 @@
+{
+  "title": "Add two integers",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "dataset": {
+      "title": "Dataset Name or ID",
+      "type": "string",
+      "description": "The dataset name or ID which you want to process.",
+      "editor": "textfield"
+    },
+    "rowFnc": {
+      "title": "Row function",
+      "type": "string",
+      "description": "Function executed for each row in dataset, the return value of function will be push to new dataset.",
+      "prefill": "def process_row(row):\n    row[\"process\"] = True\n    print(f'Row was procesed {row}')\n    return row\n",
+      "editor": "python"
+  }
+  },
+  "required": ["dataset", "rowFnc"]
+}
