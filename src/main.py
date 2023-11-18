@@ -44,7 +44,7 @@ async def main():
         # Loop though dataset items
         while True:
             dataset_item_list = await dataset.get_data(offset=offset, limit=1000)
-            if len(dataset_item_list.items):
+            if len(dataset_item_list.items) == 0:
                 break
             for line in dataset_item_list.items:
                 offset = offset + 1
