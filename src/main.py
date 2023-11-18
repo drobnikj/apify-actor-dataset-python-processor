@@ -44,8 +44,10 @@ async def main():
         # Loop though dataset items
         while True:
             dataset_item_list = await dataset.get_data(offset=offset, limit=1000)
-            if len(dataset_item_list.items) == 0:
+            items_count = len(dataset_item_list.items)
+            if items_count == 0:
                 break
+            Actor.log.info(f'Processing items {offset} - {offset + items_count} processed')
             for line in dataset_item_list.items:
                 offset = offset + 1
                 try:
