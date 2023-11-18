@@ -1,4 +1,23 @@
-# Add your dependencies here.
-# See https://pip.pypa.io/en/latest/reference/requirements-file-format/
-# for how to format them
-apify === 0.1.0b10
+aiofiles==23.2.1
+aioshutil==1.3
+anyio==4.0.0
+apify==1.3.0
+apify-client==1.5.0
+apify-shared==1.0.4
+certifi==2023.11.17
+cffi==1.16.0
+colorama==0.4.6
+cryptography==41.0.5
+exceptiongroup==1.1.3
+h11==0.14.0
+httpcore==1.0.2
+httpx==0.25.1
+idna==3.4
+psutil==5.9.6
+pycparser==2.21
+pyee==11.0.1
+sniffio==1.3.0
+sortedcollections==2.1.0
+sortedcontainers==2.4.0
+typing_extensions==4.8.0
+websockets==12.0

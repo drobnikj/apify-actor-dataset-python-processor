@@ -16,7 +16,7 @@ setup:
 	python3 -m pip install --no-cache-dir -r requirements.txt
 
 run:
-	python3 -m src.main
+	python3 -m src
 
 actor-post-create: create-venv setup
 
